@@ -6,10 +6,9 @@
 }
 
 .fifth-content {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5%;
   background-color: #581c87;
+  margin-left: 3%;
+  max-width: 100%;
 }
 
 .fifth-content h1 {
@@ -26,6 +25,14 @@
   background-color: transparent;
   color: #ffffff;
   width: 55%;
+}
+
+.fifth-text {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
 }
 
 .container {
@@ -54,6 +61,7 @@
   transition: background-color 0.3s, color 0.3s;
   width: 17%;
   height: 17%;
+  margin-left: -20%;     
 }
 
 .request-button span {
@@ -101,4 +109,72 @@
 .cta-button.small {
   font-size: 14px;
   padding: 5px 15px;
+}
+
+.carousel-wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  min-width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.testimonial-card p {
+  color: black;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.arrow {
+  margin-top: 4%;
+  color: #fcd34d;
+  border-color: #fcd34d;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.arrow:hover {
+  background-color: #fcd34d;
+  color: white;
 }
