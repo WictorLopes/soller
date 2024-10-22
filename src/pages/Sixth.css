@@ -4,7 +4,7 @@
   padding: 60px 40px;
   color: rgb(0, 0, 0);
   background-color: #7e22ce;
-  background-image: url("public/assets/circlesix.png"); /* Caminho para sua imagem */
+  background-image: url("/assets/circlesix.png");
   background-size: auto;
   background-position: right top;
   background-repeat: no-repeat;

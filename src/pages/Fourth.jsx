@@ -41,7 +41,7 @@ const Fourth = () => (
       </div>
     </div>
     <div className="fourth-image">
-      <img src="public/assets/fourthcell.png" />
+      <img src="/assets/fourthcell.png" />
     </div>
   </section>
 );

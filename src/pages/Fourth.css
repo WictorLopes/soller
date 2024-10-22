@@ -2,8 +2,8 @@
     display: flex;
     padding: 60px 40px;
     color: rgb(0, 0, 0);
-    position: relative; /* Para permitir o posicionamento absoluto */
-    background-image: url("public/assets/circlefourth.png"); /* Caminho para sua imagem */
+    position: relative;
+    background-image: url("/assets/circlefourth.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;

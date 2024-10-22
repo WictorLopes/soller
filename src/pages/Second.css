@@ -3,11 +3,11 @@
     justify-content: center;
     padding: 60px 40px;
     color: rgb(0, 0, 0);
-    position: relative; /* Para permitir o posicionamento absoluto */
-    background-image: url("public/assets/circlesecond.png"); /* Caminho para sua imagem */
+    position: relative;
+    background-image: url("/assets/circlesecond.png");
     background-size: contain;
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .second-content {
