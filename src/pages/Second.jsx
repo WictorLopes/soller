@@ -10,7 +10,7 @@ const Second = () => (
         ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor
         pharetra sed in mauris elementum sollicitudin.
       </p>
-      <img src="src/assets/desktop.png" className="desktop-img" />
+      <img src="public/assets/desktop.png" className="desktop-img" />
 
     </div>
   </section>

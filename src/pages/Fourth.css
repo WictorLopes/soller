@@ -3,7 +3,7 @@
     padding: 60px 40px;
     color: rgb(0, 0, 0);
     position: relative; /* Para permitir o posicionamento absoluto */
-    background-image: url("src/assets/circlefourth.png"); /* Caminho para sua imagem */
+    background-image: url("public/assets/circlefourth.png"); /* Caminho para sua imagem */
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;

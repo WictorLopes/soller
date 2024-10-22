@@ -4,7 +4,7 @@
     padding: 60px 40px;
     color: rgb(0, 0, 0);
     position: relative; /* Para permitir o posicionamento absoluto */
-    background-image: url("src/assets/circlesecond.png"); /* Caminho para sua imagem */
+    background-image: url("public/assets/circlesecond.png"); /* Caminho para sua imagem */
     background-size: contain;
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede a repetição da imagem */

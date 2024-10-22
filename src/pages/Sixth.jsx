@@ -16,7 +16,7 @@ const Sixth = () => (
           <p>Egestas fringilla aliquam leo</p>
         </div>
       </div>
-      <img src="src/assets/macbook.png" className="mac-img" />
+      <img src="public/assets/macbook.png" className="mac-img" />
     </div>
   </section>
 );

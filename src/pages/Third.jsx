@@ -3,7 +3,7 @@ import "./Third.css";
 const Third = () => (
   <section className="third">
     <div className="third-image">
-      <img src="src/assets/cell.png" />
+      <img src="public/assets/cell.png" />
     </div>
     <div className="third-content">
       <p style={{ color: "#D97706" }}>Services</p>
