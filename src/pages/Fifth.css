@@ -61,7 +61,7 @@
   transition: background-color 0.3s, color 0.3s;
   width: 17%;
   height: 17%;
-  margin-left: -20%;     
+  margin-left: -20%;
 }
 
 .request-button span {
@@ -134,7 +134,7 @@
 .testimonial-card {
   min-width: 300px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   gap: 10px;
   justify-content: space-around;
@@ -143,12 +143,15 @@
 
 .testimonial-card p {
   color: black;
+  font-size: small;
+  width: 100%;
+  padding-top: 20%;
 }
 
 .author-info {
   display: flex;
-  align-items: center;
   gap: 10px;
+  flex-direction: row;
 }
 
 .author-info img {
@@ -156,6 +159,9 @@
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
+.author-info p {
+  padding-top: 0;
 }
 
 .arrow {

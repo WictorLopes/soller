@@ -17,10 +17,10 @@ const Header = () => {
 
       <div className="header-right">
         <div className="contact-info">
-          <span role="img" aria-label="phone"><FontAwesomeIcon icon={faHeadphones} /></span>  555 818 282
+          <span role="img" aria-label="phone"><FontAwesomeIcon icon={faHeadphones}/></span>  555 818 282
         </div>
         <button className="header-button">
-          Request a Quote <span>→</span>
+          Request a Quote <span  style={{backgroundColor: "transparent"}} >→</span>
         </button>
       </div>
     </header>

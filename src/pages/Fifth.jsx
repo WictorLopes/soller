@@ -5,37 +5,50 @@ import jane from "/assets/perfil/jane.png";
 import cout from "/assets/perfil/cout.png";
 import cameron from "/assets/perfil/cameron.png";
 import ralph from "/assets/perfil/ralph.png";
+import wictor from "/assets/perfil/wictor.png";
 
 const testimonials = [
   {
-    text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla.",
+    text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra, euismod. Tempus, nunc, molestie imperdiet curabitur commodo euismod.",
     author: "Jane Cooper",
     consumption: "10KWh",
     img: jane,
   },
   {
-    text: "Vehicula sit sit pharetra bibendum ut risus accumsan. Mattis pharetra accumsan eget.",
+    text: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus, enim, ipsum morbi euismod pellentesque. Mattis pharetra accumsan eget est mi enim, id. Sit quam tortor eu tellus non, in euismod integer.",
     author: "Ralph Edwards",
     consumption: "32KWh",
     img: ralph,
   },
   {
-    text: "Viverra lacus suspendisse elit. Duis enim semper fermentum consequat aenean libero.",
+    text: "Viverra lacus suspendisse elit, adipiscing orci, non turpis etiam sapien. Viverra blandit sem neque pretium. Duis enim semper fermentum consequat aenean libero. Blandit porta leo condimentum dolor, nisi, aliquet ante laoreet.",
     author: "Courtney Henry",
     consumption: "6KWh",
     img: cout,
   },
   {
-    text: "Hendrerit augue ut nec, senectus quis integer netus. Mauris egestas feugiat leo.",
+    text: "Hendrerit augue ut nec, senectus quis integer netus. Sagittis fusce rhoncus magnis habitant amet amet. Egestas amet habitasse amet risus tellus ornare. Hendrerit augue ut nec, senectus. Mauris egestas feugiat leo vitae praesent neque, et.",
     author: "Cameron Williamson",
     consumption: "12KWh",
     img: cameron,
   },
   {
-    text: "Hendrerit augue ut nec, senectus quis integer netus. Mauris egestas feugiat leo.",
+    text: "Hendrerit augue ut nec, senectus quis integer netus. Sagittis fusce rhoncus magnis habitant amet amet. Egestas amet habitasse amet risus tellus ornare. Hendrerit augue ut nec, senectus. Mauris egestas feugiat leo vitae praesent neque, et.",
     author: "Cameron Williamson",
     consumption: "12KWh",
     img: cameron,
+  },
+  {
+    text: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra, euismod. Tempus, nunc, molestie imperdiet curabitur commodo euismod.",
+    author: "Wictor Lopes",
+    consumption: "10KWh",
+    img: wictor,
+  },
+  {
+    text: "Viverra lacus suspendisse elit, adipiscing orci, non turpis etiam sapien. Viverra blandit sem neque pretium. Duis enim semper fermentum consequat aenean libero. Blandit porta leo condimentum dolor, nisi, aliquet ante laoreet.",
+    author: "Jane Cooper",
+    consumption: "10KWh",
+    img: jane,
   },
 ];
 
@@ -90,7 +103,7 @@ const Fifth = () => {
           Join other Sun harvesters
         </p>
         <div className="fifth-text">
-          <div style={{ backgroundColor: "transparent"    }}>
+          <div style={{ backgroundColor: "transparent" }}>
             <h1>Make something awesome</h1>
             <p>
               Dui euismod iaculis libero, aliquet vitae et elementum porttitor.
