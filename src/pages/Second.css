@@ -1,84 +1,109 @@
 .second {
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  background-image: url("/assets/circlesecond.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.second-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.second-content p {
+  margin-bottom: 15px;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: 2px solid #581c87;
+  color: #581c87;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #581c87;
+  color: #fff;
+}
+
+.testimonial {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-img {
+  width: 1300px;
+  height: 780px;
+  margin-right: 10px;
+}
+
+.second-image {
+  position: relative;
+  max-width: 40%;
+}
+
+.second-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.contact span {
+  font-weight: bold;
+}
+
+.cta-button.small {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+@media (max-width: 768px) {
+  .second {
     display: flex;
-    justify-content: center;
-    padding: 60px 40px;
+    padding: 0 40px;
     color: rgb(0, 0, 0);
-    position: relative;
-    background-image: url("/assets/circlesecond.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-top: 15%;
   }
-  
   .second-content {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .second-content h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-  
-  .second-content p {
-    margin-bottom: 15px;
-  }
-  
-  .cta-button {
+    max-width: 100%;
     background-color: transparent;
-    border: 2px solid #581c87;
-    color: #581c87;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s ease;
   }
-  
-  .cta-button:hover {
-    background-color: #581c87;
-    color: #fff;
+  .second-content p {
+    background-color: transparent;
   }
-  
-  .testimonial {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-  }
-  
   .desktop-img {
-    width: 1400px;
-    height: 813px;
+    content: url("/assets/desktop2.png");
+    width: 305px;
+    height: 210px;
     margin-right: 10px;
+    background-color: transparent;
   }
-  
-  .second-image {
-    position: relative;
-    max-width: 40%;
-  }
-  
-  .second-image img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .contact {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-align: right;
-  }
-  
-  .contact span {
-    font-weight: bold;
-  }
-  
-  .cta-button.small {
-    font-size: 14px;
-    padding: 5px 15px;
-  }
-  
+}

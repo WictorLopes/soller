@@ -3,8 +3,8 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
+      <img src="/assets/logofooter.png" className="logo-img" style={{marginRight:"2%"}} />
       <div className="footer-left">
-        <img src="/assets/logofooter.png" className="logo-img" />
         <p>@ 2023 Soller, Inc. All rights reserved.</p>
       </div>
 

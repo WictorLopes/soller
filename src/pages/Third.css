@@ -14,7 +14,6 @@
   margin-top: 10%;
   margin-left: 5%;
   background-color: transparent;
-
 }
 
 .third-content h1 {
@@ -23,37 +22,31 @@
   margin-bottom: 20px;
   font-weight: 500;
   background-color: transparent;
-
 }
 
 .third-content p {
   margin-bottom: 30px;
   background-color: transparent;
-
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   background-color: transparent;
-
 }
 
 .block {
   width: calc(50% - 10px);
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   padding: 20px;
   background-color: transparent;
-
 }
 
 .block h3 {
   font-weight: 500;
   background-color: transparent;
-
 }
-
 
 .cta-button {
   background-color: transparent;
@@ -107,4 +100,41 @@
 .cta-button.small {
   font-size: 14px;
   padding: 5px 15px;
+}
+
+@media (max-width: 768px) {
+  .third {
+    display: flex;
+    padding: 0 40px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-top: 15%;
+    background-position: bottom;
+  }
+  .third-content {
+    max-width: 100%;
+    background-color: transparent;
+  }
+  .third-content p {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .third-content h1 {
+    margin-top: -10%;
+  }
+  .block {
+    width: calc(60% - 10px) !important;
+    margin-left: -15%;
+    width: 65%;
+  }
+  .third-image {
+    background-color: transparent;
+  }
+  .third-image img {
+    background-color: transparent;
+  }
 }

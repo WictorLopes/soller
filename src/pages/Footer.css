@@ -14,9 +14,9 @@
   flex-grow: 1;
 }
 .footer-left p {
-    color: #0F172A;
-    font-size: small;
-  }
+  color: #0f172a;
+  font-size: small;
+}
 
 .footer-right {
   display: flex;
@@ -79,4 +79,20 @@
 
 .logo-img {
   width: 7%;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  .logo-img {
+    width: 25%;
+    margin-bottom: 5px;
+  }
 }

@@ -14,7 +14,6 @@
   max-width: 90%;
   background-color: #7e22ce;
   background-color: transparent;
-
 }
 
 .sixth-content h1 {
@@ -26,7 +25,6 @@
   color: #ffffff;
   width: 65%;
   background-color: transparent;
-
 }
 
 .sixth-content p {
@@ -41,6 +39,13 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
+}
+
+.div-button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .request-button {
@@ -62,7 +67,8 @@
 
 .request-button:hover {
   background-color: #fcd34d;
-  color: white;
+  color: #78350f;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial {
@@ -102,4 +108,50 @@
 .cta-button.small {
   font-size: 14px;
   padding: 5px 15px;
+}
+
+@media (max-width: 768px) {
+  .sixth {
+    color: rgb(0, 0, 0);
+    flex-direction: column-reverse;
+    background-position: left bottom;
+    background-color: #581C87;
+    background-size: contain;
+  }
+  .sixth-content {
+    margin-top: -25%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sixth-content h1 {
+    width: 100%;
+    font-size: 35px;
+  }
+  .sixth-content p {
+    font-size: 13px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sixth-text {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+  }
+
+  .mac-img {
+    width: 270px;
+    height: 170px;
+    background-color: transparent;
+    margin-left: 15%;
+  }
+  .div-button p {
+    margin-bottom: 15%;
+  }
 }

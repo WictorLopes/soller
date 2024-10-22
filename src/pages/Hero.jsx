@@ -8,19 +8,20 @@ const Hero = () => (
         Vivamus viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci
         dui consequat turpis scelerisque.
       </p>
-      <button className="cta-button">
-        Request a Quote <span>→</span>
+      <button className="hero-button">
+        Request a Quote{" "}
+        <span style={{ backgroundColor: "transparent" }}>→</span>
       </button>
 
       <div className="testimonial">
-        <div>
+        <div style={{ marginTop: "15%" }}>
           <p>
-            “Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus
-            viverra orci dui consequat turpis scelerisque faucibus.”
+            “Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra
+            orci dui consequat turpis scelerisque faucibus.”
           </p>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src="/assets/perfil/cout.png" className="profile-img" />
-            <div style={{display: "flex",flexDirection: "column"}}>
+            <div style={{ display: "flex", flexDirection: "column" }}>
               <span style={{ fontSize: "18px" }}>Rwanda Melfor</span>
               <span style={{ fontSize: "16px", color: "#475569" }}>
                 zerowaste.com
@@ -32,7 +33,7 @@ const Hero = () => (
     </div>
 
     <div className="hero-image">
-      <img src="/assets/solarworker.png"/>
+      <img src="/assets/solarworker.png" />
     </div>
   </section>
 );

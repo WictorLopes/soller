@@ -2,20 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px;
-  width: 100%;
+  padding: 0 40px;
   color: rgb(0, 0, 0);
-  width: 70%;
   box-sizing: border-box;
 }
 
 .hero-content {
-  max-width: 50%;
+  max-width: 35%;
 }
 
 .hero-content h1 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -25,7 +23,7 @@
   margin-bottom: 30px;
 }
 
-.cta-button {
+.hero-button {
   background-color: transparent;
   border: 2px solid #581c87;
   color: #581c87;
@@ -36,9 +34,10 @@
   transition: all 0.3s ease;
 }
 
-.cta-button:hover {
+.hero-button:hover {
   background-color: #581c87;
-  color: #fff;
+  color: #fcd34d;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial {
@@ -60,7 +59,7 @@
 }
 
 .hero-image img {
-  width: 100%;
+  width: 108%;
   border-radius: 10px;
 }
 
@@ -78,4 +77,46 @@
 .cta-button.small {
   font-size: 14px;
   padding: 5px 15px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    padding: 0 40px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
+/* Tablets e telas médias (até 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    background-size: contain; /* Ajustar imagem de fundo para telas médias */
+  }
+
+  .hero-content {
+    padding: 0 10px;
+  }
+}
+
+/* Telas grandes (acima de 1024px) */
+@media (min-width: 1025px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
 }

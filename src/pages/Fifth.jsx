@@ -1,5 +1,8 @@
 import "./Fifth.css";
 import { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 import jane from "/assets/perfil/jane.png";
 import cout from "/assets/perfil/cout.png";
@@ -58,43 +61,51 @@ const Fifth = () => {
   const handleNext = () => {
     if (carouselRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
-      const cardWidth = carouselRef.current.scrollWidth / testimonials.length;
+      let cardWidth = carouselRef.current.scrollWidth / testimonials.length; // Largura padrão
+  
+      // Ajuste para telas pequenas
+      if (window.innerWidth <= 768) {
+        cardWidth = Math.min(clientWidth, 300); // Limita a largura do cartão em telas menores
+      }
+  
       if (scrollLeft + clientWidth >= scrollWidth) {
-        // Se chegamos ao final, volte ao início
         carouselRef.current.scrollTo({
           left: 0,
           behavior: "smooth",
         });
       } else {
         carouselRef.current.scrollBy({
-          left: cardWidth, // Ajuste para o tamanho de cada card
+          left: cardWidth,
           behavior: "smooth",
         });
       }
     }
   };
-
+  
   const handlePrev = () => {
     if (carouselRef.current) {
       const { scrollLeft, scrollWidth } = carouselRef.current;
-
-      const cardWidth = carouselRef.current.scrollWidth / testimonials.length; // Calcula a largura média de cada card
-
-      // Se estamos no início do carrossel, role para o final
+      let cardWidth = carouselRef.current.scrollWidth / testimonials.length; // Largura padrão
+  
+      // Ajuste para telas pequenas
+      if (window.innerWidth <= 768) {
+        cardWidth = Math.min(carouselRef.current.clientWidth, 300); // Limita a largura do cartão em telas menores
+      }
+  
       if (scrollLeft === 0) {
         carouselRef.current.scrollTo({
           left: scrollWidth, // Move para o final
           behavior: "smooth",
         });
       } else {
-        // Se não estamos no início, role para o card anterior
         carouselRef.current.scrollBy({
-          left: -cardWidth, // Ajuste para o tamanho de cada card
+          left: -cardWidth,
           behavior: "smooth",
         });
       }
     }
   };
+  
 
   return (
     <section className="fifth">
@@ -113,8 +124,11 @@ const Fifth = () => {
           </div>
           <div style={{ backgroundColor: "transparent" }}>
             <button className="request-button">
-              Request a Quote{" "}
-              <span style={{ backgroundColor: "transparent" }}>→</span>
+              Request a Quote{"  "}
+              <FontAwesomeIcon
+                style={{ marginLeft: "8px", backgroundColor: "transparent" }}
+                icon={faArrowRight}
+              />
             </button>
           </div>
         </div>
@@ -135,12 +149,20 @@ const Fifth = () => {
               </div>
             ))}
           </div>
-          <button className="arrow" onClick={handlePrev}>
-            ←
-          </button>
-          <button className="arrow" onClick={handleNext}>
-            →
-          </button>
+          <div className="arrowsResponsive">
+            <button className="arrow" onClick={handlePrev}>
+              <FontAwesomeIcon
+                style={{ marginLeft: "8px", backgroundColor: "transparent" }}
+                icon={faArrowLeft}
+              />
+            </button>
+            <button className="arrow" onClick={handleNext}>
+              <FontAwesomeIcon
+                style={{ marginLeft: "8px", backgroundColor: "transparent" }}
+                icon={faArrowRight}
+              />
+            </button>
+          </div>
         </div>
       </div>
     </section>
