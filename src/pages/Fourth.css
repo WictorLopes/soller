@@ -1,0 +1,106 @@
+.fourth {
+    display: flex;
+    padding: 60px 40px;
+    color: rgb(0, 0, 0);
+    position: relative; /* Para permitir o posicionamento absoluto */
+    background-image: url("src/assets/circlefourth.png"); /* Caminho para sua imagem */
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  
+  .fourth-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: transparent;
+  }
+  
+  .fourth-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+  
+  .fourth-content p {
+    margin-bottom: 30px;
+    background-color: transparent;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    background-color: transparent;
+  }
+  
+  .block {
+    width: calc(50% - 10px);
+    margin-bottom: 20px; 
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  .block h3 {
+    font-weight: 500;
+    background-color: transparent;
+  }
+  
+  
+  .cta-button {
+    background-color: transparent;
+    border: 2px solid #581c87;
+    color: #581c87;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #581c87;
+    color: #fff;
+  }
+  
+  .testimonial {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* .fourth-image {
+    width: 100%;
+  }
+  
+  .fourth-image img {
+    width: 100%;
+    border-radius: 10px;
+  } */
+  
+  .contact {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+  }
+  
+  .contact span {
+    font-weight: bold;
+  }
+  
+  .cta-button.small {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  

@@ -1,0 +1,105 @@
+.sixth {
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px;
+  color: rgb(0, 0, 0);
+  background-color: #7e22ce;
+  background-image: url("src/assets/circlesix.png"); /* Caminho para sua imagem */
+  background-size: auto;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.sixth-content {
+  max-width: 90%;
+  background-color: #7e22ce;
+  background-color: transparent;
+
+}
+
+.sixth-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  color: #ffffff;
+  width: 65%;
+  background-color: transparent;
+
+}
+
+.sixth-content p {
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.sixth-text {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.request-button {
+  border: 2px solid #fcd34d;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #fcd34d;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+  height: 35%;
+  margin-bottom: 12px;
+}
+
+.request-button span {
+  margin-left: 8px;
+}
+
+.request-button:hover {
+  background-color: #fcd34d;
+  color: white;
+}
+
+.testimonial {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.mac-img {
+  width: 1000px;
+  height: 555px;
+  background-color: transparent;
+  margin-left: 15%;
+}
+
+.sixth-image {
+  position: relative;
+  max-width: 40%;
+}
+
+.sixth-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.contact span {
+  font-weight: bold;
+}
+
+.cta-button.small {
+  font-size: 14px;
+  padding: 5px 15px;
+}
