@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-left">
-        <img src="src\assets\logofooter.png" className="logo-img" />
+        <img src="src/assets/logofooter.png" className="logo-img" />
         <p>@ 2023 Soller, Inc. All rights reserved.</p>
       </div>
 

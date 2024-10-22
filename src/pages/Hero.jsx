@@ -19,7 +19,7 @@ const Hero = () => (
             viverra orci dui consequat turpis scelerisque faucibus.”
           </p>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <img src="src\assets\woman.jpeg" className="profile-img" />
+            <img src="src/assets/woman.jpeg" className="profile-img" />
             <div style={{display: "flex",flexDirection: "column"}}>
               <span style={{ fontSize: "18px" }}>Rwanda Melfor</span>
               <span style={{ fontSize: "16px", color: "#475569" }}>
@@ -32,7 +32,7 @@ const Hero = () => (
     </div>
 
     <div className="hero-image">
-      <img src="src\assets\solarworker.jpeg"/>
+      <img src="src/assets/solarworker.jpeg"/>
     </div>
   </section>
 );
