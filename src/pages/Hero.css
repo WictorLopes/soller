@@ -10,6 +10,7 @@
 
 .hero-content {
   max-width: 35%;
+  margin-top: 4%;
 }
 
 .hero-content h1 {
@@ -77,11 +78,6 @@
 
 .contact span {
   font-weight: bold;
-}
-
-.cta-button.small {
-  font-size: 14px;
-  padding: 5px 15px;
 }
 
 @media (max-width: 768px) {

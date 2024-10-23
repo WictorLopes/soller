@@ -1,8 +1,3 @@
-html, body {
-  overflow: auto; /* Certifica que o scroll esteja ativo */
-  height: 100%;
-}
-
 .fifth {
   display: flex;
   padding: 60px 40px;
@@ -85,21 +80,6 @@ html, body {
   align-items: center;
 }
 
-.profile-img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.fifth-image {
-  width: 100%;
-}
-
-.fifth-image img {
-  width: 100%;
-  border-radius: 10px;
-}
 
 .contact {
   position: absolute;
@@ -110,11 +90,6 @@ html, body {
 
 .contact span {
   font-weight: bold;
-}
-
-.cta-button.small {
-  font-size: 14px;
-  padding: 5px 15px;
 }
 
 .carousel-wrapper {

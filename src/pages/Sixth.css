@@ -71,11 +71,6 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.testimonial {
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-}
 
 .mac-img {
   width: 1000px;
@@ -84,31 +79,6 @@
   margin-left: 15%;
 }
 
-.sixth-image {
-  position: relative;
-  max-width: 40%;
-}
-
-.sixth-image img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.contact {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-align: right;
-}
-
-.contact span {
-  font-weight: bold;
-}
-
-.cta-button.small {
-  font-size: 14px;
-  padding: 5px 15px;
-}
 
 @media (max-width: 768px) {
   .sixth {

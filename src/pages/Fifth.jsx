@@ -124,7 +124,6 @@ const Fifth = () => {
           </div>
         </div>
 
-        {/* Contêiner do Carrossel */}
         <div className="carousel-wrapper">
           <div className="carousel" ref={carouselRef}>
             {testimonials.map((item, index) => (
