@@ -61,13 +61,9 @@ const Fifth = () => {
   const handleNext = () => {
     if (carouselRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
-      let cardWidth = carouselRef.current.scrollWidth / testimonials.length; // Largura padrão
-  
-      // Ajuste para telas pequenas
-      if (window.innerWidth <= 768) {
-        cardWidth = Math.min(clientWidth, 300); // Limita a largura do cartão em telas menores
-      }
-  
+
+      let cardWidth = clientWidth;
+
       if (scrollLeft + clientWidth >= scrollWidth) {
         carouselRef.current.scrollTo({
           left: 0,
@@ -75,37 +71,32 @@ const Fifth = () => {
         });
       } else {
         carouselRef.current.scrollBy({
-          left: cardWidth,
+          left: cardWidth -55,
           behavior: "smooth",
         });
       }
     }
   };
-  
+
   const handlePrev = () => {
     if (carouselRef.current) {
-      const { scrollLeft, scrollWidth } = carouselRef.current;
-      let cardWidth = carouselRef.current.scrollWidth / testimonials.length; // Largura padrão
-  
-      // Ajuste para telas pequenas
-      if (window.innerWidth <= 768) {
-        cardWidth = Math.min(carouselRef.current.clientWidth, 300); // Limita a largura do cartão em telas menores
-      }
-  
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+
+      let cardWidth = clientWidth; 
+
       if (scrollLeft === 0) {
         carouselRef.current.scrollTo({
-          left: scrollWidth, // Move para o final
+          left: scrollWidth,
           behavior: "smooth",
         });
       } else {
         carouselRef.current.scrollBy({
-          left: -cardWidth,
+          left: -cardWidth +55,
           behavior: "smooth",
         });
       }
     }
   };
-  
 
   return (
     <section className="fifth">

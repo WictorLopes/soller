@@ -1,3 +1,8 @@
+html, body {
+  overflow: auto; /* Certifica que o scroll esteja ativo */
+  height: 100%;
+}
+
 .fifth {
   display: flex;
   padding: 60px 40px;
@@ -121,8 +126,8 @@
 .carousel {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
   scroll-behavior: smooth;
+  overflow: auto;
   padding: 10px;
   width: 100%;
   background-color: transparent;
@@ -224,11 +229,13 @@
     background-color: transparent;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+  }
+  .carousel {
+    display: flex;
+    width: 100vw; 
   }
   .arrowsResponsive {
     display: flex;
-    /* justify-content: center; */
     background-color: transparent;
     gap: 35%;
     margin-top: 2%;

@@ -18,8 +18,15 @@ const Header = () => {
 
       <div className="header-right">
         <div className="contact-info">
-          <span role="img" aria-label="phone">
-            <FontAwesomeIcon icon={faHeadphones} />
+          <span
+            role="img"
+            aria-label="phone"
+            style={{ backgroundColor: "transparent" }}
+          >
+            <FontAwesomeIcon
+              icon={faHeadphones}
+              style={{ backgroundColor: "transparent" }}
+            />
           </span>{" "}
           555 818 282
         </div>
